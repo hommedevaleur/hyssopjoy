@@ -1,0 +1,97 @@
+html,body{
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+.content {
+    position: relative; /* Nécessaire pour positionner l'overlay par rapport à cette div */
+    /*width: 100%;
+    height: 300px;*/
+    /*background-image: url('../images/img_1_gray.jpg'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-success {
+    position: absolute; /* Positionné de manière absolue par rapport à la div parente */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#00a65053; /* Couleur de l'overlay avec une opacité de 50% */
+}
+.overlay-danger {
+    position: absolute; /* Positionné de manière absolue par rapport à la div parente */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#dc354664; /* Couleur de l'overlay avec une opacité de 50% */
+}
+.overlay-warning {
+    position: absolute; /* Positionné de manière absolue par rapport à la div parente */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#ffc1074f; /* Couleur de l'overlay avec une opacité de 50% */
+}
+
+
+
+.title{
+    font-weight: 900 !important;
+    font-size: 4rem;
+    font-family: "Mansalva", cursive !important;
+}
+
+.fixed-top {
+    position: fixed!important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.cause{
+    flex-grow: 1;
+}
+
+.bg-orange {
+    background-color: #f76905;
+}
+.btn-orange{
+    color: #fff;
+    background-color: #f76905;
+    border-color: #f76905;
+}
+.btn-orange:hover{
+    background-color: #e86305;
+    border-color: #e86305;
+}
+
+.bg-violet {
+    background-color: #775fa9;
+}
+.btn-violet {
+    color: #fff;
+    background-color: #775fa9;
+    border-color: #775fa9;
+}
+.btn-violet:hover{
+    background-color: #3c3055;
+    border-color: #3c3055;;
+}
+
+
+/**
+violet : #775fa9
+jaune: #fae24c
+orange:#f76905
+*/
